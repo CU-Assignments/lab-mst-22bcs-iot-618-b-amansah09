@@ -3,20 +3,18 @@ import java.util.List;
 
 public class AutoboxingUnboxingSum {
     
-    // Method to parse strings into Integers and return a list
     public static List<Integer> parseStringToIntegers(String[] strNumbers) {
         List<Integer> numbers = new ArrayList<>();
         for (String str : strNumbers) {
-            numbers.add(Integer.parseInt(str)); // Autoboxing: int to Integer
+            numbers.add(Integer.parseInt(str));
         }
         return numbers;
     }
     
-    // Method to calculate the sum of a list of Integers
     public static int calculateSum(List<Integer> numbers) {
         int sum = 0;
         for (Integer num : numbers) {
-            sum += num; // Unboxing: Integer to int
+            sum += num;
         }
         return sum;
     }
